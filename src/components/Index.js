@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Search from './Search.js'
 import List from './List.js'
-import Header from './Header.js'
 import ApiServices from '../services/ApiConnect'
 
 class App extends Component {
@@ -56,7 +55,6 @@ class App extends Component {
 
     return (
       <div className="container">
-        <Header />
         <Search updateData={this.updateData} />
         <List data={this.state.data}/>
       </div>

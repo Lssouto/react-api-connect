@@ -1,16 +1,18 @@
-header{
-	background-color: #0579bc;
+header .container{
 	color: #fff;
-	padding: 15px;
+	background-color: #0579bc;
+	padding: 15px 0 ;
 }
 header span.title{
 	font-size: 22px;
 	width: 50%;
 	display: inline-block;
+	margin-left: 15px;
 }
 header a {
 	float: right;
 	color: #fff;
+	margin-right: 15px;
 }
 body{
 	background-color: #ededed;
@@ -20,7 +22,6 @@ body{
 }
 .container{
 	background-color: #fff;
-	border-radius: 6px;
 	width: 100%;
 	display: block;
 }
