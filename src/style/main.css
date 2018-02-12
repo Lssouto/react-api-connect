@@ -1,0 +1,110 @@
+header{
+	background-color: #0579bc;
+	color: #fff;
+	padding: 15px;
+}
+header span.title{
+	font-size: 22px;
+	width: 50%;
+	display: inline-block;
+}
+header a {
+	float: right;
+	color: #fff;
+}
+body{
+	background-color: #ededed;
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu";
+}
+.container{
+	background-color: #fff;
+	border-radius: 6px;
+	width: 100%;
+	display: block;
+}
+.list-itens{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0 0 ;
+}
+.list-itens li{
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	border-bottom: 5px solid #ededed;
+}
+.list-itens li:first-child{
+	padding: 0;	
+}
+.list-itens li > div {
+	text-align: center;
+	font-size: 18px;
+	flex: 1 1 auto;
+}
+.list-itens li:not(:first-child) > div{
+	padding: 5px 0;
+}
+.list-itens li > div:not(:last-child) {
+	border-bottom: 1px solid #ededed;
+}
+.input-container{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+input{
+	border: 1px solid #0579bc;
+	border-radius: 4px;
+	width: 100%;
+	min-height: 30px;
+ 	padding-left:  15px;
+}
+input:hover,input:active, input:focus{
+	border: 1px solid #0579bc;
+	box-shadow: none;
+}
+button{
+	background-color: #0579bc;
+	color: #fff;
+	padding: 10px 0 ;
+	box-shadow: none;
+	border: none;
+	transition: all 0.4s;
+	width: 100%;
+}
+button:active,button:hover{
+	background: #003c5e;
+	cursor: pointer;
+}
+span.order-by{
+	display: block;
+	padding-left: 15px;
+	margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+	.container{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.list-itens li{
+		display: block;
+		width: 100%;
+	}
+	.list-itens li > div{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		width: 19%;
+		word-wrap: break-word;
+		margin-left: 5px;
+	}
+	.list-itens li > div:not(:last-child){
+		border-bottom: 0px;
+	}
+	.list-itens li > div:first-child{
+		width: 2%;
+	}
+}
